@@ -1,0 +1,458 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #ffffff;
+  color: #222;
+  line-height: 1.6;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 6%;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo h1 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.logo p {
+  font-size: 14px;
+  color: #666;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+}
+
+.nav .btn {
+  background-color: #3f0c85;
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 4px;
+}
+
+.button {
+  width:100%;
+  margin: 30px;
+  text-align: center;
+}
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 7%;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+  padding: 20px;
+}
+
+.hero-text .welcome {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.hero-text h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hero-text .description {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #3f0c85;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+
+
+.hero-image {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+}
+
+.hero-image img {
+  max-width: 750px;
+  width: 100%;
+  border-radius: 8px;
+  max-height: 600px;
+  object-fit: cover;
+}
+
+
+/* 🔹 Section Wrapper */
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 70px 6%;
+}
+
+/* 🔹 МЕТА */
+.mission-section {
+  background-color: #3f0c85;
+  color: #fff;
+  text-align: left;
+}
+
+.mission-section h3 {
+  font-size: 22px;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.mission-section p {
+  font-size: 16px;
+}
+
+/* 🔹 ЧОМУ ОБИРАЮТЬ НАС */
+.why-us-section {
+  background-color: #fff;
+  color: #222;
+}
+
+.why-us-section h3 {
+  font-size: 22px;
+  margin-bottom: 32px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.reasons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.reason {
+  flex: 1 1 300px;
+  max-width: 500px;
+}
+
+.reason img {
+  height: 120px;
+  margin-bottom: 16px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; /* Центрует изображение */
+}
+
+.reason h4 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.reason p {
+  font-size: 16px;
+  color: #444;
+}
+
+
+/* 🔹 СЕКЦІЯ: Наші послуги */
+.services-section {
+  background-color: #ffffff;
+  padding: 60px 20px;
+}
+
+.services-section h3 {
+  font-size: 24px;
+  margin-bottom: 40px;
+  font-weight: 700;
+  text-align: center;
+}
+
+
+/* Для каруселі */
+.carousel-track .service-card {
+  flex: 0 0 70%;
+  opacity: 0.3;
+  transform: scale(0.9);
+  transition: all 0.5s ease;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  overflow: hidden;
+  width: 45%;
+}
+
+.carousel-track .service-card.active {
+  flex: 0 0 80%;
+  opacity: 1;
+  transform: scale(1);
+  z-index: 2;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 50%;
+}
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+  gap: 20px;
+  align-items: center;
+  will-change: transform;
+}
+
+.service-card {
+  flex: 0 0 70%;
+  opacity: 0.3;
+  transform: scale(0.9);
+  transition: all 0.5s ease;
+}
+
+.service-card.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.service-card img {
+  max-width: 100%;
+  padding: 5%;
+  height: auto;
+  display: block;
+}
+
+.service-card h4 {
+  font-size: 18px;
+  margin: 16px 16px 8px;
+  font-weight: 600;
+}
+
+.service-card p {
+  font-size: 15px;
+  margin: 0 16px 20px;
+  color: #444;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #3f0c85;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  cursor: pointer;
+  font-size: 24px;
+  border-radius: 50%;
+  z-index: 3;
+}
+
+.carousel-btn.prev {
+  left: 10px;
+}
+
+.carousel-btn.next {
+  right: 10px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+}
+
+
+.contact-form {
+  background-color: #3c1975;
+  color: #fff;
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.contact-form h2 {
+  margin-bottom: 20px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.contact-form input {
+  padding: 10px;
+  font-size: 16px;
+  width: 250px;
+  border: none;
+  border-radius: 4px;
+}
+
+.contact-form button {
+  padding: 12px 30px;
+  background-color: #f7931e;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-info {
+  padding: 90px 20px;
+  background-color: #fff;
+  color: #000;
+  text-align: left;
+  max-width: 900px;
+  margin: auto;
+  font-size: 18px;
+}
+
+.contact-info h3 {
+  font-size: 24px;
+  margin-bottom: 40px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.contact-info img {
+  height: 40px;
+  padding: 0px 15px;
+}
+
+.contact-info a {
+  color: #3c1975;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.messengers {
+  margin: 10px 0;
+  display: flex;
+  gap: 20px;
+  font-size: 18px;
+}
+
+
+.news-section {
+  background-color: #3c1975; /* Фиолетовый фон */
+  padding: 50px 20px;
+  color: #fff;
+  text-align: center;
+}
+
+.news-section h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.news-section p {
+  text-align: left;
+}
+
+.news-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.news-card {
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 280px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.news-card:hover {
+  transform: translateY(-5px);
+}
+
+.news-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.news-card p {
+  padding: 15px;
+  font-size: 16px;
+  color: #000;
+}
+
+.site-footer {
+  background-color: #3c1975;
+  color: #fff;
+  padding: 40px 20px 20px;
+  font-size: 15px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: auto;
+  gap: 20px;
+}
+
+.footer-column {
+  flex: 1 1 250px;
+}
+
+.footer-column h4 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #f0f0f0;
+}
+
+.footer-column a {
+  color: #f7931e;
+  text-decoration: none;
+}
+
+.footer-column a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 15px;
+  font-size: 14px;
+  color: #ccc;
+}
