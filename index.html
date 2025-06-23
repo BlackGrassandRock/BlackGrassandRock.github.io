@@ -8,19 +8,20 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <header class="header">
+   <header class="header">
     <div class="logo">
       <h1>Iris Ad Horizon</h1>
       <p>Health and new horizons</p>
     </div>
     <nav class="nav">
-      <a href="#">Хто ми</a>
-      <a href="#">Наші заходи</a>
-      <a href="#">Контакти</a>
-      <a href="#" class="btn">Замовити послугу</a>
-    </nav>
+      <a href="#mission-section">Хто ми</a>
+      <a href="#news-section">Наші заходи</a>
+      <a href="#contact-info">Контакти</a>
 
+      <a href="#services-section" class="btn">Замовити послугу</a>
+    </nav>
   </header>
+
   <section class="front">
     <main class="hero">
       <div class="hero-text">
@@ -40,7 +41,7 @@
   </section>
 
 
-  <section class="contact-form">
+  <section id="contact-form" class="contact-form">
     <h2>Залиште ваші дані і ми зв’яжемося з Вами</h2>
     <form>
       <input type="text" placeholder="Ваше ім’я" required />
@@ -50,7 +51,102 @@
     </form>
   </section>
 
-  <!-- 🔷 СЕКЦІЯ: Чому обирають нас? -->
+    <!-- 🔷 СЕКЦІЯ: Наші послуги -->
+  <section  id="services-section" class="services-section">
+    <h3>Наші послуги</h3>
+    <div class="carousel-container">
+      <button class="carousel-btn prev">&#10094;</button>
+      <div class="carousel-track">
+        <div class="service-card active">
+          <img src="stylesheet/images/products_v1.png" alt="Індивідуальне медичне консультування" />
+          <h4>Індивідуальне медичне консультування</h4>
+          <p>
+            Цікавитесь лікуванням або біохакінгом за допомогою стовбурових клітин? <br />
+            Запишіться на індивідуальну консультацію, щоб дізнатися, як саме стовбурові клітини можуть допомогти саме вам — у лікуванні, омолодженні чи підтримці якості життя.
+          </p>
+          <p>
+            Ми допоможемо вам:
+            <ul class="service-list">
+              <li>оцінити потенціал терапії стовбуровими клітинами у Вашому випадку;</li>
+              <li>підібрати відповідний медичний центр (мінімум 2 варіанти в різних країнах);</li>
+              <li>організувати транспортування біоматеріалу та забезпечити комунікацію з лікарями серед іншого.</li>
+            </ul>
+          </p>
+          <div class="price">
+            <div class="price-tag">100 €</div>
+          </div>
+          <div class="button">
+            <a href="#" class="btn primary">Замовити послугу</a>
+            <a href="#contact-form" class="btn secondary">Задати питання</a>
+          </div>
+        </div>
+
+        <div class="service-card active">
+          <img src="stylesheet/images/products_v3.png" alt="Збереження клітин дитини">
+          <h4>Збір та збереження стовбурових клітин пуповинної крові та пуповини</h4>
+          <p>
+            Стовбурові клітини з пуповинної крові та пуповини — це безцінний біологічний ресурс, який може бути використаний у майбутньому для лікування понад 80 захворювань.
+          </p>
+          <p>
+            Цей вид послуги передбачає довгострокове збереження, тому для нас безпека та надійність — пріоритет. Ми тісно співпрацюємо з Swiss Stem Cells Biotech (SSCB) — швейцарським біобанком, відомим своїми високими стандартами якості та дотриманням міжнародних протоколів.
+          </p>
+          <p>
+            Наші клієнти можуть бути впевнені, що їхні біоматеріали:
+            <ul class="service-list">
+              <li>зберігаються в сертифікованих лабораторіях у м. Лугано (Швейцарія),</li>
+              <li>перебувають під постійним контролем фахівців,</li>
+              <li>доступні для використання у випадку потреби в будь-який момент.</li>
+            </ul>
+          </p>
+          <div class="price">
+            <div class="price-tag">100 €</div>
+          </div>
+          <div class="button">
+            <a href="#" class="btn primary">Замовити послугу</a>
+            <a href="#contact-form" class="btn secondary">Задати питання</a>
+          </div>
+        </div>
+
+        <div class="service-card active">
+          <img src="stylesheet/images/products_v2.png" alt="Стволові клітини консультація" />
+          <h4>Збір, збереження та перепрограмування стовбурових клітин дорослих</h4>
+          <p>
+            Це один із найперспективніших напрямків у клітинній медицині. У дорослому віці також можна зібрати власні клітини — наприклад, з жирової тканини або кісткового мозку — і за допомогою новітніх технологій перепрограмувати їх для подальшого застосування в регенеративній терапії.
+          </p>
+          <p>
+            Ми пишаємося тим, що можемо пропонувати цю складну, але надзвичайно перспективну послугу. У нашому супроводі клієнти отримують:
+            <ul class="service-list">
+              <li>консультацію щодо джерел збору;</li>
+              <li>вибір клініки та країни проведення процедури;</li>
+              <li>повний супровід при перепрограмуванні клітин для конкретного виду терапії.</li>
+            </ul>
+          </p>
+          <div class="price">
+            <div class="price-tag">100 €</div>
+          </div>
+          <div class="button">
+            <a href="#" class="btn primary">Отримати консультацію</a>
+            <a href="#contact-form" class="btn secondary">Задати питання</a>
+          </div>
+        </div>
+
+      </div>
+      <button class="carousel-btn next">&#10095;</button>
+    </div>
+  </section>
+
+
+  <!-- 🔷 СЕКЦІЯ: Наша мета -->
+  <section id="mission-section" class="mission-section">
+    <div class="container">
+      <h3>Наша мета</h3>
+      <p>
+        Наше основне завдання — зробити новітні медичні технології доступними вже сьогодні: надати експертну підтримку, допомогти зорієнтуватися у можливостях, супроводжувати клієнта на кожному етапі — від консультації до дії. Ми консультуємо, супроводжуємо та відкриваємо доступ до найновіших клітинних технологій у співпраці з найкращими біобанками Європи, зокрема <b>Swiss Stem Cells Biotech</b> у Швейцарії. Ми також працюємо з цілим рядом медичних центрів, які успішно проводять лікування стовбуровими клітинами в Європі, в Азії та США.
+      </p>
+    </div>
+  </section>
+
+<!-- 🔷 СЕКЦІЯ: Чому обирають нас? -->
   <section class="why-us-section">
     <div class="container">
       <h3>Чому обирають нас?</h3>
@@ -80,59 +176,8 @@
     </div>
   </section>
 
-  <!-- 🔷 СЕКЦІЯ: Наша мета -->
-  <section class="mission-section">
-    <div class="container">
-      <h3>Наша мета</h3>
-      <p>
-        Наше основне завдання — допомога в отриманні максимально повної інформації щодо можливостей лікування конкретної хвороби або стану, індивідуальний підхід, якість супроводу при прийнятті важливих рішень, що стосуються здоров’я та життя.
-      </p>
-    </div>
-  </section>
-
-    <!-- 🔷 СЕКЦІЯ: Наші послуги -->
-  <section class="services-section">
-    <h3>Наші послуги</h3>
-    <div class="carousel-container">
-      <button class="carousel-btn prev">&#10094;</button>
-      <div class="carousel-track">
-        <div class="service-card">
-          <img src="stylesheet/images/products_v1.png" alt="Консультація з лікарем" />
-          <h4>Консультування за індивідуальними запитами</h4>
-          <p>
-            Ми розуміємо, що кожен випадок є унікальним. Тому ми пропонуємо індивідуальні рішення, що ґрунтуються на Ваших потребах та обставинах. Ми допомагаємо Вам прийняти максимально виважене рішення щодо лікування або інших медичних потреб.
-          </p>
-          <div class="button">
-            <a href="#" class="btn">Замовити послугу</a>
-          </div>
-        </div>
-        <div class="service-card">
-          <img src="stylesheet/images/products_v2.png" alt="Стволові клітини консультація" />
-          <h4>Консультування з питань стовбурових клітин</h4>
-          <p>
-            Наші фахівці нададуть Вам всю необхідну інформацію про можливості використання стовбурових клітин при лікуванні вказаного Вами захворювання. Ми також допоможемо розібратись у складних медичних аспектах, отримати контакти та пропозиції від конкретних медичних закладів.
-          </p>
-          <div class="button">
-            <a href="#" class="btn">Замовити послугу</a>
-          </div>
-        </div>
-        <div class="service-card">
-          <img src="stylesheet/images/products_v3.png" alt="Збереження клітин дитини" />
-          <h4>Збереження стовбурових клітин дитини та дорослого</h4>
-          <p>
-            Якщо Ви розглядаєте можливість збереження стовбурових клітин як Вашого додаткового медичного ресурсу на все життя, ми пропонуємо послуги зі збирання та зберігання пуповинної крові та тканини пуповини. Ці клітини можуть стати ключовим елементом у лікуванні різноманітних захворювань у майбутньому. Ми також допоможемо дізнатись про програми збереження стовбурових клітин для дорослих, які дозволять створити клітинний ресурс на майбутні роки.
-          </p>
-          <div class="button">
-            <a href="#" class="btn">Замовити послугу</a>
-          </div>
-        </div>
-      </div>
-      <button class="carousel-btn next">&#10095;</button>
-    </div>
-  </section>
-
-  <section class="news-section">
-    <h2>Останні події</h2>
+  <section id="news-section" class="news-section">
+    <h2>Події року 2025</h2>
     <div class="news-cards">
       <div class="news-card">
         <img src="stylesheet/images/event_v1.png" alt="Конференція у Відні" />
@@ -151,19 +196,35 @@
 
 
   <!-- Контакти -->
-  <section class="contact-info">
+   <section id="contact-info" class="contact-info">
     <h3>Наші контакти</h3>
-    <p>Ми завжди готові допомогти Вам! Зв'яжіться з нами будь-яким зручним для Вас способом:</p>
-
-    <p>
-       <img src="stylesheet/images/email.png" alt="email">
-      Для загальних запитів:
-      <a href="mailto:info@irismedconsult.com">info@irismedconsult.com</a>
+    <p class="intro">
+      Ми завжди готові допомогти Вам! Зв'яжіться з нами будь-яким зручним для Вас способом:
     </p>
 
+    <div class="contact-method">
+      <span>Для загальних запитів:</span>
+    </div>
+
     <div class="messengers">
-      <span><img src="stylesheet/images/viber.png" alt="Viber"> Viber</span>
-      <span><img src="stylesheet/images/whatsapp.png" alt="whatsapp"> Whatsapp</span>
+      <div class="messenger-item">
+        <a href="mailto:consult@irisadhorizon.com">
+          <img src="stylesheet/images/email.png" alt="Email">
+          Email
+        </a>
+      </div>
+      <div class="messenger-item">
+        <a href="viber://chat?number=+3809613858158">
+          <img src="stylesheet/images/viber.png" alt="Viber">
+          Viber
+        </a>
+      </div>
+      <div class="messenger-item">
+        <a href="https://wa.me/+3809613858158">
+          <img src="stylesheet/images/whatsapp.png" alt="WhatApp">
+          WhatApp
+        </a>
+      </div>
     </div>
 
     <p class="note">
@@ -172,35 +233,49 @@
     </p>
   </section>
 
+
   <footer class="site-footer">
     <div class="footer-container">
+
+      <!-- Logo & Slogan -->
       <div class="footer-column">
         <div class="logo">
           <h1>Iris Ad Horizon</h1>
+          <p>Health and new horizons</p>
         </div>
-        <p>Health and new horizons</p>
       </div>
 
-      <div class="footer-column">
-        <h4>Контакти</h4>
-        <p>📧 <a href="mailto:info@irismedconsult.com">info@irismedconsult.com</a></p>
-        <p>📱 Viber | Whatsapp</p>
-      </div>
-
+            <!-- Соцмережі -->
       <div class="footer-column">
         <h4>Соцмережі</h4>
-        <p>
-          <a href="#">Facebook</a><br />
-          <a href="#">Instagram</a><br />
-          <a href="#">LinkedIn</a>
-        </p>
+        <p><a href="#">Facebook</a></p>
+        <p><a href="#">Instagram</a></p>
+        <p><a href="#">LinkedIn</a></p>
       </div>
+
+      <!-- Контакты -->
+      <div class="footer-column">
+        <h4>Контакти</h4>
+        <div class="footer-contact-item">
+          <img src="stylesheet/images/email.png" alt="Email">
+          <a href="mailto:consult@irisadhorizon.com">consult@irisadhorizon.com</a>
+        </div>
+        <div class="footer-contact-item">
+          <img src="stylesheet/images/viber.png" alt="Viber">
+          <span>Viber</span>
+          <span class="divider">|</span>
+          <img src="stylesheet/images/whatsapp.png" alt="WhatsApp">
+          <span>Whatsapp</span>
+        </div>
+      </div>
+
     </div>
 
     <div class="footer-bottom">
-      <p>&copy; 2025 GirlsMedConsult. Всі права захищені.</p>
+      <p>&copy; 2025 IrisAdHorizon. Всі права захищені.</p>
     </div>
   </footer>
+
 
 
     <script>
