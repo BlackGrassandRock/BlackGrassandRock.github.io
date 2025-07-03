@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Iris Ad Horizon</title>
   <link rel="stylesheet" href="stylesheet/css/styles.css" />
+  <link rel="stylesheet" href="stylesheet/css/phone.css" />
+  <link rel="stylesheet" href="stylesheet/css/carousel.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
@@ -15,15 +17,16 @@
           <p>Health and new horizons</p>
         </div>
       </a>
-      <div class="burger" id="burger">&#9776;</div>
-      <nav class="nav">
-        <a href="index.html#mission-section">Хто ми</a>
-        <a href="index.html#contact-info">Контакти</a>
-        <a href="index.html#news-section">Новини</a>
-
-        <a href="#" class="btn">Замовити послугу</a>
+     <div class="burger" id="burger">&#9776;</div>
+      <nav class="nav" id="nav">
+        <a href="index#mission-section">Хто ми</a>
+        <a href="index#contact-info">Контакти</a>
+        <a href="index#news-section">Новини</a>
+        <a href="services.html" class="btn">Замовити послугу</a>
       </nav>
   </header>
+
+
 
     <!-- 🔷 СЕКЦІЯ: Наші послуги -->
   <section  id="services-section" class="services-section">
@@ -122,10 +125,6 @@
 
 
 
-
-
-
-
   <footer class="site-footer">
     <div class="footer-container">
 
@@ -142,7 +141,6 @@
         <h4>Соцмережі</h4>
         <p><a href="#">Facebook</a></p>
         <p><a href="#">Instagram</a></p>
-        <p><a href="#">LinkedIn</a></p>
       </div>
 
       <!-- Контакты -->
@@ -168,39 +166,7 @@
     </div>
   </footer>
 
-
-
-    <script>
-      const cards = document.querySelectorAll('.carousel-track .service-card');
-      const prevBtn = document.querySelector('.carousel-btn.prev');
-      const nextBtn = document.querySelector('.carousel-btn.next');
-      let current = 1;
-
-      function updateCarousel() {
-        cards.forEach((card, index) => {
-          card.classList.remove('active');
-          if (index === current) {
-            card.classList.add('active');
-          }
-        });
-        const offset = (cards[0].offsetWidth + 10) * current;
-        document.querySelector('.carousel-track').style.transform = `translateX(calc(50% - ${offset + cards[0].offsetWidth / 2}px))`;
-      }
-
-      prevBtn.addEventListener('click', () => {
-        current = (current - 1 + cards.length) % cards.length;
-        updateCarousel();
-      });
-
-      nextBtn.addEventListener('click', () => {
-        current = (current + 1) % cards.length;
-        updateCarousel();
-      });
-
-      window.addEventListener('load', updateCarousel);
-    </script>
-
-
-
+<script src="stylesheet/js/carousel.js"></script>
+<script src="stylesheet/js/meny.js" defer></script>
 </body>
 </html>

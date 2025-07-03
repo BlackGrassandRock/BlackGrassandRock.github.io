@@ -68,6 +68,17 @@ body {
   width:100%;
   margin: 30px;
   text-align: center;
+  display:none;
+  text-align: center;
+}
+
+
+.button a:hover {
+  background-color: #7a5fff;
+  color: #fff;
+  border-radius: 4px;
+  padding: 15px;
+  transition-delay: 0.1s;
 }
 
 .hero {
@@ -214,146 +225,6 @@ body {
 .reason p {
   font-size: 16px;
   color: #444;
-}
-
-
-/* 🔹 СЕКЦІЯ: Наші послуги */
-.services-section {
-  background-color: #ffffff;
-  padding: 60px 20px;
-}
-
-.services-section h3 {
-  font-size: 24px;
-  margin-bottom: 40px;
-  font-weight: 700;
-  text-align: center;
-}
-
-
-/* Для каруселі */
-.carousel-track .service-card {
-  flex: 0 0 70%;
-  opacity: 0.3;
-  transform: scale(0.9);
-  transition: all 0.5s ease;
-  background-color: #fff;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  border-radius: 8px;
-  overflow: hidden;
-  width: 45%;
-}
-
-
-.service-card .service-list {
-  margin: 10px 20px 20px;
-  padding-left: 20px;
-  list-style-type: disc;
-  color: #444;
-  font-size: 15px;
-}
-
-.price {
-    width: 100%;
-    text-align: right;
-}
-
-.price-tag {
-  display: inline-block;
-  background-color: #3f0c85; /* фирменный фиолетовый */
-  color: #fff;
-  padding: 4px 12px;
-  border-radius: 20px;
-  margin-right: 50px;
-  font-weight: 500;
-  font-size: 18px;
-  margin-bottom: 12px;
-}
-
-
-.carousel-track .service-card.active {
-  flex: 0 0 80%;
-  opacity: 1;
-  transform: scale(1);
-  z-index: 2;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  width: 50%;
-}
-.carousel-container {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 20px 0;
-}
-
-.carousel-track {
-  display: flex;
-  transition: transform 0.5s ease;
-  gap: 20px;
-  align-items: center;
-  will-change: transform;
-}
-
-.service-card {
-  flex: 0 0 70%;
-  opacity: 0.3;
-  transform: scale(0.9);
-  transition: all 0.5s ease;
-}
-
-.service-card.active {
-  opacity: 1;
-  transform: scale(1);
-}
-
-.service-card img {
-  max-width: 100%;
-  padding: 5%;
-  height: auto;
-  display: block;
-}
-
-.service-card h4 {
-  font-size: 18px;
-  margin: 16px 16px 8px;
-  font-weight: 600;
-}
-
-.service-card p {
-  font-size: 15px;
-  margin: 0 16px 20px;
-  color: #444;
-}
-
-.carousel-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: #3f0c85;
-  color: white;
-  border: none;
-  padding: 10px 16px;
-  cursor: pointer;
-  font-size: 24px;
-  border-radius: 50%;
-  z-index: 3;
-}
-
-
-.carousel-btn.prev {
-  left: 10px;
-}
-
-.carousel-btn.next {
-  right: 10px;
-}
-
-.nav a {
-  text-decoration: none;
-  color: #000;
-  font-weight: 600;
 }
 
 
