@@ -5,134 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Iris Ad Horizon</title>
   <link rel="stylesheet" href="stylesheet/css/styles.css" />
+  <link rel="stylesheet" href="stylesheet/css/phone.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
    <header class="header">
-    <div class="logo">
-      <h1>Iris Ad Horizon</h1>
-      <p>Health and new horizons</p>
-    </div>
-    <nav class="nav">
-      <a href="#mission-section">Хто ми</a>
-      <a href="#news-section">Наші заходи</a>
-      <a href="#contact-info">Контакти</a>
-
-      <a href="#services-section" class="btn">Замовити послугу</a>
-    </nav>
+      <a href="index.html">
+        <div class="logo">
+          <h1>Iris Ad Horizon</h1>
+          <p>Health and new horizons</p>
+        </div>
+      </a>
+     <div class="burger" id="burger">&#9776;</div>
+      <nav class="nav" id="nav">
+        <a href="#mission-section">Хто ми</a>
+        <a href="#contact-info">Контакти</a>
+        <a href="#news-section">Новини</a>
+        <a href="services.html" class="btn">Замовити послугу</a>
+      </nav>
   </header>
 
   <section class="front">
     <main class="hero">
       <div class="hero-text">
-        <p class="welcome">Ласкаво просимо до Iris Ad Horizon</p>
         <h2>Відкриваємо нові горизонти в питаннях збереження здоров’я або порятунку життя</h2>
         <p class="description">
           Індивідуальне консультування та пошук можливостей лікування в таких напрямах сучасної медицини: онкологічні захворювання, можливості використання стовбурових клітин для лікування, проблеми безпліддя, сурогатне материнство, естетична медицина, тощо.
         </p>
-        <div class="button">
-          <a href="#" class="btn">Наші послуги</a>
-        </div>
       </div>
       <div class="hero-image">
         <img src="stylesheet/images/home.png" alt="Фантастичний пейзаж із веселкою та ірисами" />
       </div>
     </main>
-  </section>
-
-
-  <section id="contact-form" class="contact-form">
-    <h2>Залиште ваші дані і ми зв’яжемося з Вами</h2>
-    <form>
-      <input type="text" placeholder="Ваше ім’я" required />
-      <input type="tel" placeholder="+" required />
-      <input type="email" placeholder="Ваша електронна пошта" required />
-      <button type="submit">Надіслати</button>
-    </form>
-  </section>
-
-    <!-- 🔷 СЕКЦІЯ: Наші послуги -->
-  <section  id="services-section" class="services-section">
-    <h3>Наші послуги</h3>
-    <div class="carousel-container">
-      <button class="carousel-btn prev">&#10094;</button>
-      <div class="carousel-track">
-        <div class="service-card active">
-          <img src="stylesheet/images/products_v1.png" alt="Індивідуальне медичне консультування" />
-          <h4>Індивідуальне медичне консультування</h4>
-          <p>
-            Цікавитесь лікуванням або біохакінгом за допомогою стовбурових клітин? <br />
-            Запишіться на індивідуальну консультацію, щоб дізнатися, як саме стовбурові клітини можуть допомогти саме вам — у лікуванні, омолодженні чи підтримці якості життя.
-          </p>
-          <p>
-            Ми допоможемо вам:
-            <ul class="service-list">
-              <li>оцінити потенціал терапії стовбуровими клітинами у Вашому випадку;</li>
-              <li>підібрати відповідний медичний центр (мінімум 2 варіанти в різних країнах);</li>
-              <li>організувати транспортування біоматеріалу та забезпечити комунікацію з лікарями серед іншого.</li>
-            </ul>
-          </p>
-          <div class="price">
-            <div class="price-tag">100 €</div>
-          </div>
-          <div class="button">
-            <a href="#" class="btn primary">Замовити послугу</a>
-            <a href="#contact-form" class="btn secondary">Задати питання</a>
-          </div>
-        </div>
-
-        <div class="service-card active">
-          <img src="stylesheet/images/products_v3.png" alt="Збереження клітин дитини">
-          <h4>Збір та збереження стовбурових клітин пуповинної крові та пуповини</h4>
-          <p>
-            Стовбурові клітини з пуповинної крові та пуповини — це безцінний біологічний ресурс, який може бути використаний у майбутньому для лікування понад 80 захворювань.
-          </p>
-          <p>
-            Цей вид послуги передбачає довгострокове збереження, тому для нас безпека та надійність — пріоритет. Ми тісно співпрацюємо з Swiss Stem Cells Biotech (SSCB) — швейцарським біобанком, відомим своїми високими стандартами якості та дотриманням міжнародних протоколів.
-          </p>
-          <p>
-            Наші клієнти можуть бути впевнені, що їхні біоматеріали:
-            <ul class="service-list">
-              <li>зберігаються в сертифікованих лабораторіях у м. Лугано (Швейцарія),</li>
-              <li>перебувають під постійним контролем фахівців,</li>
-              <li>доступні для використання у випадку потреби в будь-який момент.</li>
-            </ul>
-          </p>
-          <div class="price">
-            <div class="price-tag">100 €</div>
-          </div>
-          <div class="button">
-            <a href="#" class="btn primary">Замовити послугу</a>
-            <a href="#contact-form" class="btn secondary">Задати питання</a>
-          </div>
-        </div>
-
-        <div class="service-card active">
-          <img src="stylesheet/images/products_v2.png" alt="Стволові клітини консультація" />
-          <h4>Збір, збереження та перепрограмування стовбурових клітин дорослих</h4>
-          <p>
-            Це один із найперспективніших напрямків у клітинній медицині. У дорослому віці також можна зібрати власні клітини — наприклад, з жирової тканини або кісткового мозку — і за допомогою новітніх технологій перепрограмувати їх для подальшого застосування в регенеративній терапії.
-          </p>
-          <p>
-            Ми пишаємося тим, що можемо пропонувати цю складну, але надзвичайно перспективну послугу. У нашому супроводі клієнти отримують:
-            <ul class="service-list">
-              <li>консультацію щодо джерел збору;</li>
-              <li>вибір клініки та країни проведення процедури;</li>
-              <li>повний супровід при перепрограмуванні клітин для конкретного виду терапії.</li>
-            </ul>
-          </p>
-          <div class="price">
-            <div class="price-tag">100 €</div>
-          </div>
-          <div class="button">
-            <a href="#" class="btn primary">Отримати консультацію</a>
-            <a href="#contact-form" class="btn secondary">Задати питання</a>
-          </div>
-        </div>
-
-      </div>
-      <button class="carousel-btn next">&#10095;</button>
-    </div>
   </section>
 
 
@@ -276,39 +180,7 @@
     </div>
   </footer>
 
-
-
-    <script>
-      const cards = document.querySelectorAll('.carousel-track .service-card');
-      const prevBtn = document.querySelector('.carousel-btn.prev');
-      const nextBtn = document.querySelector('.carousel-btn.next');
-      let current = 1;
-
-      function updateCarousel() {
-        cards.forEach((card, index) => {
-          card.classList.remove('active');
-          if (index === current) {
-            card.classList.add('active');
-          }
-        });
-        const offset = (cards[0].offsetWidth + 10) * current;
-        document.querySelector('.carousel-track').style.transform = `translateX(calc(50% - ${offset + cards[0].offsetWidth / 2}px))`;
-      }
-
-      prevBtn.addEventListener('click', () => {
-        current = (current - 1 + cards.length) % cards.length;
-        updateCarousel();
-      });
-
-      nextBtn.addEventListener('click', () => {
-        current = (current + 1) % cards.length;
-        updateCarousel();
-      });
-
-      window.addEventListener('load', updateCarousel);
-    </script>
-
-
-
+<script src="stylesheet/js/carousel.js"></script>
+<script src="stylesheet/js/meny.js" defer></script>
 </body>
 </html>
